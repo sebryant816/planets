@@ -745,32 +745,31 @@
                        </table>
         <table>
 
-        <tr>
+            <tr>
 
-        <?php
+                <?php
 
-        $sql = "SELECT * FROM planets WHERE id=3";
-        $result = mysqli_query($conn, $sql);
+                $sql = "SELECT * FROM planets WHERE id=3";
+                $result = mysqli_query($conn, $sql);
 
-        if (mysqli_num_rows($result) > 0) {
-        // output data of each row
-        while($row = mysqli_fetch_assoc($result)) {
+                if (mysqli_num_rows($result) > 0) {
+                // output data of each row
+                while($row = mysqli_fetch_assoc($result)) {
 
-        ?>
-        <td><?=$row["orbitalperiod"]?></td>
+                ?>
+                <td><?=$row["orbitalperiod"]?></td>
 
 
-        <?
-          }
-          } else {
-          echo "0 results";
-          }
+                <?
+                  }
+                  } else {
+                  echo "0 results";
+                  }
 
-        ?>
+                ?>
 
-                     </tr>
-
-                </table>
+             </tr>
+        </table>
 
          </div>
         <!-- display col  3 --->
@@ -779,9 +778,9 @@
 
         <br>
 
-                    <table>
+         <table>
 
-                       <tr>
+                <tr>
 
                     <?php
 
